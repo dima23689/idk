@@ -1,0 +1,27 @@
+print("Score,Computer", result
+ ["computer"],"—", result["player"],
+ "Player")
+elif_str.lower(choice) == "p" and computer_
+choice == "r"
+result["player"] += 1
+print("------Player Wins------")
+print("Score,Computer", result
+ ["computer"],"—", result["player"],
+ "Player")
+elifstr.lower(choice) == "s" and computer_
+choice == "r"
+(result)["computer"] += 1
+(print)("------Computer Wins------")
+(print)("Score,Computer", result
+ ["computer"],"—", result["player"],
+ "Player")
+elifstr.lower(choice) == "s" and computer
+(choice) == "p"
+result["player"] += 1
+print("------Player Wins------")
+print("Score,Computer", result
+ ["computer"],"—", result["player"],
+       "Player")
+result = {"computer": 0, "player": 0}
+choise = input("Select R / P / S – ")
+game(choice=choise, result=result)
