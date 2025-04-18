@@ -1,0 +1,11 @@
+def center_format(text, width, fill_char=' '):
+    :param text: 
+    :param width: 
+    :param fill_char: 
+    :return: 
+    if len(fill_char) != 1:
+        raise ValueError
+    if width < len(text):
+        return text  
+    return text.center(width, fill_char)
+print(center_format("Привіт", 20, '*'))
