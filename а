@@ -1,0 +1,6 @@
+groupmates = "Андрій, Максим, Софія, Дмитро"
+user_name = input("Введіть ваше ім'я для автентифікації: ")
+if user_name.strip() in groupmates.split(", "):
+    print(f"Вітаємо, {user_name} Вхід успішний ")
+else:
+    print(f" {user_name}, вас немає у списку ")
