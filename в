@@ -1,0 +1,9 @@
+import os
+import shutil
+def move_images(src, dst):
+    allowed = {'.jpg', '.jpeg', '.png', '.gif'}
+    os.makedirs(dst, exist_ok=True)
+    for file in os.listdir(src):
+        if os.path.splitext(file)[1].lower() in allowed:
+            shutil.move(os.path.join(src, file), os.path.join(dst, file))
+move_images('input_folder', 'images_only')
