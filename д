@@ -1,0 +1,17 @@
+import random
+heroes = ["Бетмен", "Супермен", "Флеш", "Халк", "Тор"]
+used = {}
+while heroes:
+    name = input("Ваше ім'я (або 'стоп'): ")
+    if name.lower() == "стоп":
+        break
+    if name in used:
+        print(f"Ви вже {used[name]}")
+    else:
+        hero = random.choice(heroes)
+        used[name] = hero
+        heroes.remove(hero)
+        print(f"{name}, ваше ім'я супергероя: {hero}")
+print("\nРезультати:")
+for k, v in used.items():
+    print(f"{k} => {v}")
